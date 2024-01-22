@@ -1,0 +1,116 @@
+header{
+  text-align: center;
+  
+}
+
+
+.hide {
+  display: none
+}
+
+.label_level{
+padding-right:15px;
+font-size: 1.4rem;
+font-weight: bold;
+ /* TODO modificar las letras del combo */
+
+}
+option, select{
+  font-family: 'Kalnia', serif;
+}
+.selection_level {
+  width: 125px;
+  font-size: 18px;
+
+}
+
+.button_play{
+  margin-left: 15px;
+}
+
+.game_board {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+aside{
+  display: flex;
+  justify-content: center;
+
+}
+.achivement{
+  position: relative;
+}
+
+.master_mind {
+
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+
+}
+.master_mind_stamp{
+width:130px;
+
+}
+.master_mind_trophy{
+width: 30px;
+position: absolute;
+top: 4px;
+left: 100px;
+
+}
+.master_mind_text{
+padding-left: 10px;
+padding-right: 10px;
+position: absolute;
+top:18px;
+text-align: center;
+font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+font-size: 14px;
+color: oklch(0.171 0.1061 0.8587);
+font-weight: bold;
+}
+
+.time {
+  display: flex;
+  justify-content: center;
+  margin: 15px 0;
+  width: 120px;
+  font-size: 18px;
+  padding: 10px 0px;
+  border: 1px solid red;
+   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  
+}
+.update {
+  width: 50px;
+  animation:rotate-scale-down 0.4s linear both
+}
+.lost {
+  font-size: 25px;
+  font-variation-settings: 'wght' 400;
+	animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+
+
+
+ @keyframes rotate-scale-down{0%{transform:scale(1) rotateZ(0)}50%{transform:scale(.5) rotateZ(180deg)}100%{transform:scale(1) rotateZ(360deg)}}
+
+
+@keyframes tracking-in-expand-fwd {
+  0% {
+    letter-spacing: -0.5em;
+    transform: translateZ(-700px);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateZ(0);
+    opacity: 1;
+  }
+}
